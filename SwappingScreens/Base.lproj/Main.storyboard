@@ -46,15 +46,24 @@
                                     <action selector="loadNextScreenPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dvb-I2-39W"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UKs-1c-2m0">
+                                <rect key="frame" x="0.0" y="60" width="375" height="258"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pickerView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="UKs-1c-2m0" firstAttribute="top" secondItem="ODY-Dd-DRp" secondAttribute="bottom" constant="10" id="JKG-Nm-pmd"/>
+                            <constraint firstItem="pKh-Q8-ghy" firstAttribute="top" secondItem="UKs-1c-2m0" secondAttribute="bottom" id="NNk-ob-4WM"/>
                             <constraint firstItem="ODY-Dd-DRp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="R1M-Tm-j2Y"/>
                             <constraint firstItem="ODY-Dd-DRp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="akM-iz-zcP"/>
                             <constraint firstItem="pKh-Q8-ghy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bL2-Go-hrv"/>
                             <constraint firstItem="pKh-Q8-ghy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="efc-3f-Acj"/>
+                            <constraint firstItem="UKs-1c-2m0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="urD-dC-1gq"/>
+                            <constraint firstAttribute="trailing" secondItem="UKs-1c-2m0" secondAttribute="trailing" id="zul-7A-BDN"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="songsPickerView" destination="UKs-1c-2m0" id="HVJ-Z2-01Z"/>
                         <segue destination="rTa-nH-har" kind="showDetail" identifier="PlaySongVC" id="cxl-sb-Z4O"/>
                     </connections>
                 </viewController>
